@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ManifestVersionReader": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\Matti\\Documents\\Visual Studio 2017\\Projects\\DrroidApp\\DrroidApp\\Properties\\AndroidManifest.xml\""
+    }
+  }
+}
