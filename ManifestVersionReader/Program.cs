@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Xml;
 
 namespace ManifestVersionReader
@@ -15,9 +16,13 @@ namespace ManifestVersionReader
 
         static void Main(string[] args)
         {
-            string path = args[0];
-            var versin = ReadVersion(path);
-            Console.WriteLine(versin);
+            if (args.Count() < 1) {
+                Console.WriteLine("Missing path arg");
+            } else {
+                string path = args[0];
+                var versin = ReadVersion(path);
+                Console.WriteLine(versin);                
+            }
         }
     }
 }
